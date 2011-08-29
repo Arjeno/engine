@@ -32,6 +32,10 @@ module Locomotive
         def depth
           self._source.depth
         end
+        
+        def listed
+          self._source.listed
+        end
 
       end
     end
