@@ -65,6 +65,7 @@ module Locomotive
           'contents'          => Locomotive::Liquid::Drops::Contents.new,
           'current_page'      => self.params[:page],
           'params'            => self.params,
+          'path'              => request.path,
           'url'               => request.url,
           'now'               => Time.now.utc,
           'today'             => Date.today
@@ -111,7 +112,7 @@ module Locomotive
       end
 
       def editing_page?
-        self.params[:editing] == true && current_admin
+        @editing
       end
 
       def page_status

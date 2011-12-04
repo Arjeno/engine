@@ -33,8 +33,12 @@ module Locomotive
           self._source.depth
         end
         
-        def listed
-          self._source.listed
+        def listed?
+          self._source.listed?
+        end
+        
+        def published?
+          self._source.published?
         end
 
       end

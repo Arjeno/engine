@@ -175,7 +175,10 @@ fr:
         pt-BR: "en Portugais"
         it: "en Italien"
         nl: "en Hollandais"
+        "no": "en Norvégien"
         es: en Espagnol
+        ru: en Russe
+
         ask_for_name: "Veuillez entrer le nouveau nom"
 
     theme_assets:
